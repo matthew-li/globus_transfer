@@ -24,6 +24,10 @@ __email__ = "meli@lbl.gov"
 
 def main():
     """Check for changes and transfer to the appropriate endpoint or send an error e-mail."""
+    # Error checking.
+    if config.CODE_PATH[len(config.CODE_PATH) - 1] != "/":
+        print("Please add a trailing slash to CODE_PATH in config.py.")
+        return
     # Initialize a transfer client given the application ID and refresh token path.
     tc = utils.globus_get_transfer_client(config.CLIENT_ID, config.TOKEN_PATH)
     # Determine whether or not the source and destination endpoints are ready for transfer.
