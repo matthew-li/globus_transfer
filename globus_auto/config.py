@@ -11,7 +11,7 @@ DST_DIR = ""
 
 # SETTINGS ########################################################################################
 
-# The ID of the source GCP endpoint.
+# The ID of the source endpoint.
 SRC_ID = ""
 # The ID of the destination endpoint.
 DST_ID = ""
