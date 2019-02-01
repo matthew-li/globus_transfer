@@ -32,7 +32,7 @@ Updates are written to the log.
 
 Python 3.3+ and the package `globus-sdk` (`pip install globus-sdk`) are required.
 
-A client application must be created under the user's Globus account to authorize transfers. Add the application's ID to `config.py`.
+A client application must be created under the user's Globus account to authorize transfers. Follow Steps 1-2 of this tutorial: https://globus-sdk-python.readthedocs.io/en/stable/tutorial/. Add the application's ID to `config.py`.
 
 ## 3. Package Contents
 
